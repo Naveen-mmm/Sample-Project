@@ -24,10 +24,22 @@ public class Locators1 {
 		driver.findElement(By.cssSelector("input[name$='words']")).sendKeys("toys");
 		driver.findElement(By.cssSelector("input[name$='words']")).clear();
 		driver.findElement(By.cssSelector("input[aria-controls*='plete-results-']")).sendKeys("Laptop");
+		driver.findElement(By.cssSelector("input[aria-controls*='plete-results-']")).clear();
+		
+		driver.findElement(By.xpath("//input[@placeholder='Search Amazon.in']")).sendKeys("Bluestar AC");
+		driver.findElement(By.xpath("//input[@placeholder='Search Amazon.in']")).clear();
+		driver.findElement(By.xpath("//input[contains(@id,'searchtextbox')]")).sendKeys("Samsung AC");
+		driver.findElement(By.xpath("//input[contains(@id,'searchtextbox')]")).clear();
+		driver.findElement(By.xpath("//input[contains(@aria-controls,'-results-container')]")).sendKeys("Gift");
+		driver.findElement(By.xpath("//input[contains(@aria-controls,'-results-container')]")).clear();
+		driver.findElement(By.xpath("//input[starts-with(@class,'nav-input nav-')]")).sendKeys("Honda Bike");
+		driver.findElement(By.xpath("//input[starts-with(@class,'nav-input nav-')]")).clear();
+		
+		driver.findElement(By.xpath("//a[text()='New Releases']")).click();
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
 
 		 Locators1 obj = new Locators1();
 		 obj.loca1();
